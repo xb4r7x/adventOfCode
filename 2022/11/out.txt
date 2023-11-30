@@ -1,0 +1,1110 @@
+ROUND 0
+[[[79, 98], ['*', 19], 23, 2, 3, 0], [[54, 65, 75, 74], ['+', 6], 19, 2, 0, 0], [[79, 60, 97], ['*', 'old'], 13, 1, 3, 0], [[74], ['+', 3], 17, 0, 1, 0]]
+MONKEY 0
+Evaluated FALSE. Popping 500 from 0 and inserting into [74]
+500
+[74, 500]
+Evaluated FALSE. Popping 620 from 0 and inserting into [74, 500]
+620
+[74, 500, 620]
+[[[], ['*', 19], 23, 2, 3, 3], [[54, 65, 75, 74], ['+', 6], 19, 2, 0, 0], [[79, 60, 97], ['*', 'old'], 13, 1, 3, 0], [[74, 500, 620], ['+', 3], 17, 0, 1, 0]]
+MONKEY 1
+Evaluated FALSE. Popping 20 from 1 and inserting into []
+20
+[20]
+Evaluated FALSE. Popping 23 from 1 and inserting into [20]
+23
+[20, 23]
+Evaluated FALSE. Popping 27 from 1 and inserting into [20, 23]
+27
+[20, 23, 27]
+Evaluated FALSE. Popping 26 from 1 and inserting into [20, 23, 27]
+26
+[20, 23, 27, 26]
+[[[20, 23, 27, 26], ['*', 19], 23, 2, 3, 3], [[], ['+', 6], 19, 2, 0, 5], [[79, 60, 97], ['*', 'old'], 13, 1, 3, 0], [[74, 500, 620], ['+', 3], 17, 0, 1, 0]]
+MONKEY 2
+Evaluated TRUE. Popping 2080 from 2 and inserting into []
+2080
+[2080]
+Evaluated FALSE. Popping 1580 from 2 and inserting into [74, 500, 620]
+1580
+[74, 500, 620, 1580]
+Evaluated FALSE. Popping 2554 from 2 and inserting into [74, 500, 620, 1580]
+2554
+[74, 500, 620, 1580, 2554]
+[[[20, 23, 27, 26], ['*', 19], 23, 2, 3, 3], [[2080], ['+', 6], 19, 2, 0, 5], [[], ['*', 79], 13, 1, 3, 4], [[74, 500, 620, 1580, 2554], ['+', 3], 17, 0, 1, 0]]
+MONKEY 3
+Evaluated FALSE. Popping 25 from 3 and inserting into [2080]
+25
+[2080, 25]
+Evaluated FALSE. Popping 167 from 3 and inserting into [2080, 25]
+167
+[2080, 25, 167]
+Evaluated FALSE. Popping 207 from 3 and inserting into [2080, 25, 167]
+207
+[2080, 25, 167, 207]
+Evaluated TRUE. Popping 527 from 3 and inserting into [20, 23, 27, 26]
+527
+[20, 23, 27, 26, 527]
+Evaluated FALSE. Popping 852 from 3 and inserting into [2080, 25, 167, 207]
+852
+[2080, 25, 167, 207, 852]
+ROUND 1
+[[[20, 23, 27, 26, 527], ['*', 19], 23, 2, 3, 3], [[2080, 25, 167, 207, 852], ['+', 6], 19, 2, 0, 5], [[], ['*', 79], 13, 1, 3, 4], [[], ['+', 3], 17, 0, 1, 6]]
+MONKEY 0
+Evaluated FALSE. Popping 126 from 0 and inserting into []
+126
+[126]
+Evaluated FALSE. Popping 145 from 0 and inserting into [126]
+145
+[126, 145]
+Evaluated FALSE. Popping 171 from 0 and inserting into [126, 145]
+171
+[126, 145, 171]
+Evaluated FALSE. Popping 164 from 0 and inserting into [126, 145, 171]
+164
+[126, 145, 171, 164]
+Evaluated FALSE. Popping 3337 from 0 and inserting into [126, 145, 171, 164]
+3337
+[126, 145, 171, 164, 3337]
+[[[], ['*', 19], 23, 2, 3, 9], [[2080, 25, 167, 207, 852], ['+', 6], 19, 2, 0, 5], [[], ['*', 79], 13, 1, 3, 4], [[126, 145, 171, 164, 3337], ['+', 3], 17, 0, 1, 6]]
+MONKEY 1
+Evaluated FALSE. Popping 695 from 1 and inserting into []
+695
+[695]
+Evaluated FALSE. Popping 10 from 1 and inserting into [695]
+10
+[695, 10]
+Evaluated TRUE. Popping 57 from 1 and inserting into []
+57
+[57]
+Evaluated FALSE. Popping 71 from 1 and inserting into [695, 10]
+71
+[695, 10, 71]
+Evaluated FALSE. Popping 286 from 1 and inserting into [695, 10, 71]
+286
+[695, 10, 71, 286]
+[[[695, 10, 71, 286], ['*', 19], 23, 2, 3, 9], [[], ['+', 6], 19, 2, 0, 11], [[57], ['*', 79], 13, 1, 3, 4], [[126, 145, 171, 164, 3337], ['+', 3], 17, 0, 1, 6]]
+MONKEY 2
+Evaluated FALSE. Popping 1501 from 2 and inserting into [126, 145, 171, 164, 3337]
+1501
+[126, 145, 171, 164, 3337, 1501]
+[[[695, 10, 71, 286], ['*', 19], 23, 2, 3, 9], [[], ['+', 6], 19, 2, 0, 11], [[], ['*', 79], 13, 1, 3, 6], [[126, 145, 171, 164, 3337, 1501], ['+', 3], 17, 0, 1, 6]]
+MONKEY 3
+Evaluated FALSE. Popping 43 from 3 and inserting into []
+43
+[43]
+Evaluated FALSE. Popping 49 from 3 and inserting into [43]
+49
+[43, 49]
+Evaluated FALSE. Popping 58 from 3 and inserting into [43, 49]
+58
+[43, 49, 58]
+Evaluated FALSE. Popping 55 from 3 and inserting into [43, 49, 58]
+55
+[43, 49, 58, 55]
+Evaluated FALSE. Popping 1113 from 3 and inserting into [43, 49, 58, 55]
+1113
+[43, 49, 58, 55, 1113]
+Evaluated FALSE. Popping 501 from 3 and inserting into [43, 49, 58, 55, 1113]
+501
+[43, 49, 58, 55, 1113, 501]
+ROUND 2
+[[[695, 10, 71, 286], ['*', 19], 23, 2, 3, 9], [[43, 49, 58, 55, 1113, 501], ['+', 6], 19, 2, 0, 11], [[], ['*', 79], 13, 1, 3, 6], [[], ['+', 3], 17, 0, 1, 13]]
+MONKEY 0
+Evaluated FALSE. Popping 4401 from 0 and inserting into []
+4401
+[4401]
+Evaluated FALSE. Popping 63 from 0 and inserting into [4401]
+63
+[4401, 63]
+Evaluated FALSE. Popping 449 from 0 and inserting into [4401, 63]
+449
+[4401, 63, 449]
+Evaluated FALSE. Popping 1811 from 0 and inserting into [4401, 63, 449]
+1811
+[4401, 63, 449, 1811]
+[[[], ['*', 19], 23, 2, 3, 14], [[43, 49, 58, 55, 1113, 501], ['+', 6], 19, 2, 0, 11], [[], ['*', 79], 13, 1, 3, 6], [[4401, 63, 449, 1811], ['+', 3], 17, 0, 1, 13]]
+MONKEY 1
+Evaluated FALSE. Popping 16 from 1 and inserting into []
+16
+[16]
+Evaluated FALSE. Popping 18 from 1 and inserting into [16]
+18
+[16, 18]
+Evaluated FALSE. Popping 21 from 1 and inserting into [16, 18]
+21
+[16, 18, 21]
+Evaluated FALSE. Popping 20 from 1 and inserting into [16, 18, 21]
+20
+[16, 18, 21, 20]
+Evaluated FALSE. Popping 373 from 1 and inserting into [16, 18, 21, 20]
+373
+[16, 18, 21, 20, 373]
+Evaluated FALSE. Popping 169 from 1 and inserting into [16, 18, 21, 20, 373]
+169
+[16, 18, 21, 20, 373, 169]
+[[[16, 18, 21, 20, 373, 169], ['*', 19], 23, 2, 3, 14], [[], ['+', 6], 19, 2, 0, 18], [[], ['*', 79], 13, 1, 3, 6], [[4401, 63, 449, 1811], ['+', 3], 17, 0, 1, 13]]
+MONKEY 2
+[[[16, 18, 21, 20, 373, 169], ['*', 19], 23, 2, 3, 14], [[], ['+', 6], 19, 2, 0, 18], [[], ['*', 79], 13, 1, 3, 7], [[4401, 63, 449, 1811], ['+', 3], 17, 0, 1, 13]]
+MONKEY 3
+Evaluated FALSE. Popping 1468 from 3 and inserting into []
+1468
+[1468]
+Evaluated FALSE. Popping 22 from 3 and inserting into [1468]
+22
+[1468, 22]
+Evaluated FALSE. Popping 150 from 3 and inserting into [1468, 22]
+150
+[1468, 22, 150]
+Evaluated FALSE. Popping 604 from 3 and inserting into [1468, 22, 150]
+604
+[1468, 22, 150, 604]
+ROUND 3
+[[[16, 18, 21, 20, 373, 169], ['*', 19], 23, 2, 3, 14], [[1468, 22, 150, 604], ['+', 6], 19, 2, 0, 18], [[], ['*', 79], 13, 1, 3, 7], [[], ['+', 3], 17, 0, 1, 18]]
+MONKEY 0
+Evaluated FALSE. Popping 101 from 0 and inserting into []
+101
+[101]
+Evaluated FALSE. Popping 114 from 0 and inserting into [101]
+114
+[101, 114]
+Evaluated FALSE. Popping 133 from 0 and inserting into [101, 114]
+133
+[101, 114, 133]
+Evaluated FALSE. Popping 126 from 0 and inserting into [101, 114, 133]
+126
+[101, 114, 133, 126]
+Evaluated FALSE. Popping 2362 from 0 and inserting into [101, 114, 133, 126]
+2362
+[101, 114, 133, 126, 2362]
+Evaluated FALSE. Popping 1070 from 0 and inserting into [101, 114, 133, 126, 2362]
+1070
+[101, 114, 133, 126, 2362, 1070]
+[[[], ['*', 19], 23, 2, 3, 21], [[1468, 22, 150, 604], ['+', 6], 19, 2, 0, 18], [[], ['*', 79], 13, 1, 3, 7], [[101, 114, 133, 126, 2362, 1070], ['+', 3], 17, 0, 1, 18]]
+MONKEY 1
+Evaluated FALSE. Popping 491 from 1 and inserting into []
+491
+[491]
+Evaluated FALSE. Popping 9 from 1 and inserting into [491]
+9
+[491, 9]
+Evaluated FALSE. Popping 52 from 1 and inserting into [491, 9]
+52
+[491, 9, 52]
+Evaluated FALSE. Popping 203 from 1 and inserting into [491, 9, 52]
+203
+[491, 9, 52, 203]
+[[[491, 9, 52, 203], ['*', 19], 23, 2, 3, 21], [[], ['+', 6], 19, 2, 0, 23], [[], ['*', 79], 13, 1, 3, 7], [[101, 114, 133, 126, 2362, 1070], ['+', 3], 17, 0, 1, 18]]
+MONKEY 2
+[[[491, 9, 52, 203], ['*', 19], 23, 2, 3, 21], [[], ['+', 6], 19, 2, 0, 23], [[], ['*', 79], 13, 1, 3, 8], [[101, 114, 133, 126, 2362, 1070], ['+', 3], 17, 0, 1, 18]]
+MONKEY 3
+Evaluated TRUE. Popping 34 from 3 and inserting into [491, 9, 52, 203]
+34
+[491, 9, 52, 203, 34]
+Evaluated FALSE. Popping 39 from 3 and inserting into []
+39
+[39]
+Evaluated FALSE. Popping 45 from 3 and inserting into [39]
+45
+[39, 45]
+Evaluated FALSE. Popping 43 from 3 and inserting into [39, 45]
+43
+[39, 45, 43]
+Evaluated FALSE. Popping 788 from 3 and inserting into [39, 45, 43]
+788
+[39, 45, 43, 788]
+Evaluated TRUE. Popping 357 from 3 and inserting into [491, 9, 52, 203, 34]
+357
+[491, 9, 52, 203, 34, 357]
+ROUND 4
+[[[491, 9, 52, 203, 34, 357], ['*', 19], 23, 2, 3, 21], [[39, 45, 43, 788], ['+', 6], 19, 2, 0, 23], [[], ['*', 79], 13, 1, 3, 8], [[], ['+', 3], 17, 0, 1, 25]]
+MONKEY 0
+Evaluated FALSE. Popping 3109 from 0 and inserting into []
+3109
+[3109]
+Evaluated FALSE. Popping 57 from 0 and inserting into [3109]
+57
+[3109, 57]
+Evaluated FALSE. Popping 329 from 0 and inserting into [3109, 57]
+329
+[3109, 57, 329]
+Evaluated FALSE. Popping 1285 from 0 and inserting into [3109, 57, 329]
+1285
+[3109, 57, 329, 1285]
+Evaluated FALSE. Popping 215 from 0 and inserting into [3109, 57, 329, 1285]
+215
+[3109, 57, 329, 1285, 215]
+Evaluated FALSE. Popping 2261 from 0 and inserting into [3109, 57, 329, 1285, 215]
+2261
+[3109, 57, 329, 1285, 215, 2261]
+[[[], ['*', 19], 23, 2, 3, 28], [[39, 45, 43, 788], ['+', 6], 19, 2, 0, 23], [[], ['*', 79], 13, 1, 3, 8], [[3109, 57, 329, 1285, 215, 2261], ['+', 3], 17, 0, 1, 25]]
+MONKEY 1
+Evaluated FALSE. Popping 15 from 1 and inserting into []
+15
+[15]
+Evaluated FALSE. Popping 17 from 1 and inserting into [15]
+17
+[15, 17]
+Evaluated FALSE. Popping 16 from 1 and inserting into [15, 17]
+16
+[15, 17, 16]
+Evaluated FALSE. Popping 264 from 1 and inserting into [15, 17, 16]
+264
+[15, 17, 16, 264]
+[[[15, 17, 16, 264], ['*', 19], 23, 2, 3, 28], [[], ['+', 6], 19, 2, 0, 28], [[], ['*', 79], 13, 1, 3, 8], [[3109, 57, 329, 1285, 215, 2261], ['+', 3], 17, 0, 1, 25]]
+MONKEY 2
+[[[15, 17, 16, 264], ['*', 19], 23, 2, 3, 28], [[], ['+', 6], 19, 2, 0, 28], [[], ['*', 79], 13, 1, 3, 9], [[3109, 57, 329, 1285, 215, 2261], ['+', 3], 17, 0, 1, 25]]
+MONKEY 3
+Evaluated TRUE. Popping 1037 from 3 and inserting into [15, 17, 16, 264]
+1037
+[15, 17, 16, 264, 1037]
+Evaluated FALSE. Popping 20 from 3 and inserting into []
+20
+[20]
+Evaluated FALSE. Popping 110 from 3 and inserting into [20]
+110
+[20, 110]
+Evaluated FALSE. Popping 429 from 3 and inserting into [20, 110]
+429
+[20, 110, 429]
+Evaluated FALSE. Popping 72 from 3 and inserting into [20, 110, 429]
+72
+[20, 110, 429, 72]
+Evaluated FALSE. Popping 754 from 3 and inserting into [20, 110, 429, 72]
+754
+[20, 110, 429, 72, 754]
+ROUND 5
+[[[15, 17, 16, 264, 1037], ['*', 19], 23, 2, 3, 28], [[20, 110, 429, 72, 754], ['+', 6], 19, 2, 0, 28], [[], ['*', 79], 13, 1, 3, 9], [[], ['+', 3], 17, 0, 1, 32]]
+MONKEY 0
+Evaluated FALSE. Popping 95 from 0 and inserting into []
+95
+[95]
+Evaluated FALSE. Popping 107 from 0 and inserting into [95]
+107
+[95, 107]
+Evaluated FALSE. Popping 101 from 0 and inserting into [95, 107]
+101
+[95, 107, 101]
+Evaluated FALSE. Popping 1672 from 0 and inserting into [95, 107, 101]
+1672
+[95, 107, 101, 1672]
+Evaluated FALSE. Popping 6567 from 0 and inserting into [95, 107, 101, 1672]
+6567
+[95, 107, 101, 1672, 6567]
+[[[], ['*', 19], 23, 2, 3, 34], [[20, 110, 429, 72, 754], ['+', 6], 19, 2, 0, 28], [[], ['*', 79], 13, 1, 3, 9], [[95, 107, 101, 1672, 6567], ['+', 3], 17, 0, 1, 32]]
+MONKEY 1
+Evaluated FALSE. Popping 8 from 1 and inserting into []
+8
+[8]
+Evaluated TRUE. Popping 38 from 1 and inserting into []
+38
+[38]
+Evaluated FALSE. Popping 145 from 1 and inserting into [8]
+145
+[8, 145]
+Evaluated FALSE. Popping 26 from 1 and inserting into [8, 145]
+26
+[8, 145, 26]
+Evaluated FALSE. Popping 253 from 1 and inserting into [8, 145, 26]
+253
+[8, 145, 26, 253]
+[[[8, 145, 26, 253], ['*', 19], 23, 2, 3, 34], [[], ['+', 6], 19, 2, 0, 34], [[38], ['*', 79], 13, 1, 3, 9], [[95, 107, 101, 1672, 6567], ['+', 3], 17, 0, 1, 32]]
+MONKEY 2
+Evaluated FALSE. Popping 1000 from 2 and inserting into [95, 107, 101, 1672, 6567]
+1000
+[95, 107, 101, 1672, 6567, 1000]
+[[[8, 145, 26, 253], ['*', 19], 23, 2, 3, 34], [[], ['+', 6], 19, 2, 0, 34], [[], ['*', 79], 13, 1, 3, 11], [[95, 107, 101, 1672, 6567, 1000], ['+', 3], 17, 0, 1, 32]]
+MONKEY 3
+Evaluated FALSE. Popping 32 from 3 and inserting into []
+32
+[32]
+Evaluated FALSE. Popping 36 from 3 and inserting into [32]
+36
+[32, 36]
+Evaluated TRUE. Popping 34 from 3 and inserting into [8, 145, 26, 253]
+34
+[8, 145, 26, 253, 34]
+Evaluated FALSE. Popping 558 from 3 and inserting into [32, 36]
+558
+[32, 36, 558]
+Evaluated FALSE. Popping 2190 from 3 and inserting into [32, 36, 558]
+2190
+[32, 36, 558, 2190]
+Evaluated FALSE. Popping 334 from 3 and inserting into [32, 36, 558, 2190]
+334
+[32, 36, 558, 2190, 334]
+ROUND 6
+[[[8, 145, 26, 253, 34], ['*', 19], 23, 2, 3, 34], [[32, 36, 558, 2190, 334], ['+', 6], 19, 2, 0, 34], [[], ['*', 79], 13, 1, 3, 11], [[], ['+', 3], 17, 0, 1, 39]]
+MONKEY 0
+Evaluated FALSE. Popping 50 from 0 and inserting into []
+50
+[50]
+Evaluated FALSE. Popping 918 from 0 and inserting into [50]
+918
+[50, 918]
+Evaluated FALSE. Popping 164 from 0 and inserting into [50, 918]
+164
+[50, 918, 164]
+Evaluated FALSE. Popping 1602 from 0 and inserting into [50, 918, 164]
+1602
+[50, 918, 164, 1602]
+Evaluated FALSE. Popping 215 from 0 and inserting into [50, 918, 164, 1602]
+215
+[50, 918, 164, 1602, 215]
+[[[], ['*', 19], 23, 2, 3, 40], [[32, 36, 558, 2190, 334], ['+', 6], 19, 2, 0, 34], [[], ['*', 79], 13, 1, 3, 11], [[50, 918, 164, 1602, 215], ['+', 3], 17, 0, 1, 39]]
+MONKEY 1
+Evaluated FALSE. Popping 12 from 1 and inserting into []
+12
+[12]
+Evaluated FALSE. Popping 14 from 1 and inserting into [12]
+14
+[12, 14]
+Evaluated FALSE. Popping 188 from 1 and inserting into [12, 14]
+188
+[12, 14, 188]
+Evaluated FALSE. Popping 732 from 1 and inserting into [12, 14, 188]
+732
+[12, 14, 188, 732]
+Evaluated FALSE. Popping 113 from 1 and inserting into [12, 14, 188, 732]
+113
+[12, 14, 188, 732, 113]
+[[[12, 14, 188, 732, 113], ['*', 19], 23, 2, 3, 40], [[], ['+', 6], 19, 2, 0, 40], [[], ['*', 79], 13, 1, 3, 11], [[50, 918, 164, 1602, 215], ['+', 3], 17, 0, 1, 39]]
+MONKEY 2
+[[[12, 14, 188, 732, 113], ['*', 19], 23, 2, 3, 40], [[], ['+', 6], 19, 2, 0, 40], [[], ['*', 79], 13, 1, 3, 12], [[50, 918, 164, 1602, 215], ['+', 3], 17, 0, 1, 39]]
+MONKEY 3
+Evaluated TRUE. Popping 17 from 3 and inserting into [12, 14, 188, 732, 113]
+17
+[12, 14, 188, 732, 113, 17]
+Evaluated FALSE. Popping 307 from 3 and inserting into []
+307
+[307]
+Evaluated FALSE. Popping 55 from 3 and inserting into [307]
+55
+[307, 55]
+Evaluated FALSE. Popping 535 from 3 and inserting into [307, 55]
+535
+[307, 55, 535]
+Evaluated FALSE. Popping 72 from 3 and inserting into [307, 55, 535]
+72
+[307, 55, 535, 72]
+ROUND 7
+[[[12, 14, 188, 732, 113, 17], ['*', 19], 23, 2, 3, 40], [[307, 55, 535, 72], ['+', 6], 19, 2, 0, 40], [[], ['*', 79], 13, 1, 3, 12], [[], ['+', 3], 17, 0, 1, 45]]
+MONKEY 0
+Evaluated FALSE. Popping 76 from 0 and inserting into []
+76
+[76]
+Evaluated FALSE. Popping 88 from 0 and inserting into [76]
+88
+[76, 88]
+Evaluated FALSE. Popping 1190 from 0 and inserting into [76, 88]
+1190
+[76, 88, 1190]
+Evaluated FALSE. Popping 4636 from 0 and inserting into [76, 88, 1190]
+4636
+[76, 88, 1190, 4636]
+Evaluated FALSE. Popping 715 from 0 and inserting into [76, 88, 1190, 4636]
+715
+[76, 88, 1190, 4636, 715]
+Evaluated FALSE. Popping 107 from 0 and inserting into [76, 88, 1190, 4636, 715]
+107
+[76, 88, 1190, 4636, 715, 107]
+[[[], ['*', 19], 23, 2, 3, 47], [[307, 55, 535, 72], ['+', 6], 19, 2, 0, 40], [[], ['*', 79], 13, 1, 3, 12], [[76, 88, 1190, 4636, 715, 107], ['+', 3], 17, 0, 1, 45]]
+MONKEY 1
+Evaluated FALSE. Popping 104 from 1 and inserting into []
+104
+[104]
+Evaluated FALSE. Popping 20 from 1 and inserting into [104]
+20
+[104, 20]
+Evaluated FALSE. Popping 180 from 1 and inserting into [104, 20]
+180
+[104, 20, 180]
+Evaluated FALSE. Popping 26 from 1 and inserting into [104, 20, 180]
+26
+[104, 20, 180, 26]
+[[[104, 20, 180, 26], ['*', 19], 23, 2, 3, 47], [[], ['+', 6], 19, 2, 0, 45], [[], ['*', 79], 13, 1, 3, 12], [[76, 88, 1190, 4636, 715, 107], ['+', 3], 17, 0, 1, 45]]
+MONKEY 2
+[[[104, 20, 180, 26], ['*', 19], 23, 2, 3, 47], [[], ['+', 6], 19, 2, 0, 45], [[], ['*', 79], 13, 1, 3, 13], [[76, 88, 1190, 4636, 715, 107], ['+', 3], 17, 0, 1, 45]]
+MONKEY 3
+Evaluated FALSE. Popping 26 from 3 and inserting into []
+26
+[26]
+Evaluated FALSE. Popping 30 from 3 and inserting into [26]
+30
+[26, 30]
+Evaluated FALSE. Popping 397 from 3 and inserting into [26, 30]
+397
+[26, 30, 397]
+Evaluated FALSE. Popping 1546 from 3 and inserting into [26, 30, 397]
+1546
+[26, 30, 397, 1546]
+Evaluated FALSE. Popping 239 from 3 and inserting into [26, 30, 397, 1546]
+239
+[26, 30, 397, 1546, 239]
+Evaluated FALSE. Popping 36 from 3 and inserting into [26, 30, 397, 1546, 239]
+36
+[26, 30, 397, 1546, 239, 36]
+ROUND 8
+[[[104, 20, 180, 26], ['*', 19], 23, 2, 3, 47], [[26, 30, 397, 1546, 239, 36], ['+', 6], 19, 2, 0, 45], [[], ['*', 79], 13, 1, 3, 13], [[], ['+', 3], 17, 0, 1, 52]]
+MONKEY 0
+Evaluated FALSE. Popping 658 from 0 and inserting into []
+658
+[658]
+Evaluated FALSE. Popping 126 from 0 and inserting into [658]
+126
+[658, 126]
+Evaluated FALSE. Popping 1140 from 0 and inserting into [658, 126]
+1140
+[658, 126, 1140]
+Evaluated FALSE. Popping 164 from 0 and inserting into [658, 126, 1140]
+164
+[658, 126, 1140, 164]
+[[[], ['*', 19], 23, 2, 3, 52], [[26, 30, 397, 1546, 239, 36], ['+', 6], 19, 2, 0, 45], [[], ['*', 79], 13, 1, 3, 13], [[658, 126, 1140, 164], ['+', 3], 17, 0, 1, 52]]
+MONKEY 1
+Evaluated FALSE. Popping 10 from 1 and inserting into []
+10
+[10]
+Evaluated FALSE. Popping 12 from 1 and inserting into [10]
+12
+[10, 12]
+Evaluated FALSE. Popping 134 from 1 and inserting into [10, 12]
+134
+[10, 12, 134]
+Evaluated FALSE. Popping 517 from 1 and inserting into [10, 12, 134]
+517
+[10, 12, 134, 517]
+Evaluated FALSE. Popping 81 from 1 and inserting into [10, 12, 134, 517]
+81
+[10, 12, 134, 517, 81]
+Evaluated FALSE. Popping 14 from 1 and inserting into [10, 12, 134, 517, 81]
+14
+[10, 12, 134, 517, 81, 14]
+[[[10, 12, 134, 517, 81, 14], ['*', 19], 23, 2, 3, 52], [[], ['+', 6], 19, 2, 0, 52], [[], ['*', 79], 13, 1, 3, 13], [[658, 126, 1140, 164], ['+', 3], 17, 0, 1, 52]]
+MONKEY 2
+[[[10, 12, 134, 517, 81, 14], ['*', 19], 23, 2, 3, 52], [[], ['+', 6], 19, 2, 0, 52], [[], ['*', 79], 13, 1, 3, 14], [[658, 126, 1140, 164], ['+', 3], 17, 0, 1, 52]]
+MONKEY 3
+Evaluated FALSE. Popping 220 from 3 and inserting into []
+220
+[220]
+Evaluated FALSE. Popping 43 from 3 and inserting into [220]
+43
+[220, 43]
+Evaluated FALSE. Popping 381 from 3 and inserting into [220, 43]
+381
+[220, 43, 381]
+Evaluated FALSE. Popping 55 from 3 and inserting into [220, 43, 381]
+55
+[220, 43, 381, 55]
+ROUND 9
+[[[10, 12, 134, 517, 81, 14], ['*', 19], 23, 2, 3, 52], [[220, 43, 381, 55], ['+', 6], 19, 2, 0, 52], [[], ['*', 79], 13, 1, 3, 14], [[], ['+', 3], 17, 0, 1, 57]]
+MONKEY 0
+Evaluated FALSE. Popping 63 from 0 and inserting into []
+63
+[63]
+Evaluated FALSE. Popping 76 from 0 and inserting into [63]
+76
+[63, 76]
+Evaluated FALSE. Popping 848 from 0 and inserting into [63, 76]
+848
+[63, 76, 848]
+Evaluated FALSE. Popping 3274 from 0 and inserting into [63, 76, 848]
+3274
+[63, 76, 848, 3274]
+Evaluated FALSE. Popping 513 from 0 and inserting into [63, 76, 848, 3274]
+513
+[63, 76, 848, 3274, 513]
+Evaluated FALSE. Popping 88 from 0 and inserting into [63, 76, 848, 3274, 513]
+88
+[63, 76, 848, 3274, 513, 88]
+[[[], ['*', 19], 23, 2, 3, 59], [[220, 43, 381, 55], ['+', 6], 19, 2, 0, 52], [[], ['*', 79], 13, 1, 3, 14], [[63, 76, 848, 3274, 513, 88], ['+', 3], 17, 0, 1, 57]]
+MONKEY 1
+Evaluated FALSE. Popping 75 from 1 and inserting into []
+75
+[75]
+Evaluated FALSE. Popping 16 from 1 and inserting into [75]
+16
+[75, 16]
+Evaluated FALSE. Popping 129 from 1 and inserting into [75, 16]
+129
+[75, 16, 129]
+Evaluated FALSE. Popping 20 from 1 and inserting into [75, 16, 129]
+20
+[75, 16, 129, 20]
+[[[75, 16, 129, 20], ['*', 19], 23, 2, 3, 59], [[], ['+', 6], 19, 2, 0, 57], [[], ['*', 79], 13, 1, 3, 14], [[63, 76, 848, 3274, 513, 88], ['+', 3], 17, 0, 1, 57]]
+MONKEY 2
+[[[75, 16, 129, 20], ['*', 19], 23, 2, 3, 59], [[], ['+', 6], 19, 2, 0, 57], [[], ['*', 79], 13, 1, 3, 15], [[63, 76, 848, 3274, 513, 88], ['+', 3], 17, 0, 1, 57]]
+MONKEY 3
+Evaluated FALSE. Popping 22 from 3 and inserting into []
+22
+[22]
+Evaluated FALSE. Popping 26 from 3 and inserting into [22]
+26
+[22, 26]
+Evaluated FALSE. Popping 283 from 3 and inserting into [22, 26]
+283
+[22, 26, 283]
+Evaluated FALSE. Popping 1092 from 3 and inserting into [22, 26, 283]
+1092
+[22, 26, 283, 1092]
+Evaluated FALSE. Popping 172 from 3 and inserting into [22, 26, 283, 1092]
+172
+[22, 26, 283, 1092, 172]
+Evaluated FALSE. Popping 30 from 3 and inserting into [22, 26, 283, 1092, 172]
+30
+[22, 26, 283, 1092, 172, 30]
+ROUND 10
+[[[75, 16, 129, 20], ['*', 19], 23, 2, 3, 59], [[22, 26, 283, 1092, 172, 30], ['+', 6], 19, 2, 0, 57], [[], ['*', 79], 13, 1, 3, 15], [[], ['+', 3], 17, 0, 1, 64]]
+MONKEY 0
+Evaluated FALSE. Popping 475 from 0 and inserting into []
+475
+[475]
+Evaluated FALSE. Popping 101 from 0 and inserting into [475]
+101
+[475, 101]
+Evaluated FALSE. Popping 817 from 0 and inserting into [475, 101]
+817
+[475, 101, 817]
+Evaluated FALSE. Popping 126 from 0 and inserting into [475, 101, 817]
+126
+[475, 101, 817, 126]
+[[[], ['*', 19], 23, 2, 3, 64], [[22, 26, 283, 1092, 172, 30], ['+', 6], 19, 2, 0, 57], [[], ['*', 79], 13, 1, 3, 15], [[475, 101, 817, 126], ['+', 3], 17, 0, 1, 64]]
+MONKEY 1
+Evaluated FALSE. Popping 9 from 1 and inserting into []
+9
+[9]
+Evaluated FALSE. Popping 10 from 1 and inserting into [9]
+10
+[9, 10]
+Evaluated FALSE. Popping 96 from 1 and inserting into [9, 10]
+96
+[9, 10, 96]
+Evaluated FALSE. Popping 366 from 1 and inserting into [9, 10, 96]
+366
+[9, 10, 96, 366]
+Evaluated FALSE. Popping 59 from 1 and inserting into [9, 10, 96, 366]
+59
+[9, 10, 96, 366, 59]
+Evaluated FALSE. Popping 12 from 1 and inserting into [9, 10, 96, 366, 59]
+12
+[9, 10, 96, 366, 59, 12]
+[[[9, 10, 96, 366, 59, 12], ['*', 19], 23, 2, 3, 64], [[], ['+', 6], 19, 2, 0, 64], [[], ['*', 79], 13, 1, 3, 15], [[475, 101, 817, 126], ['+', 3], 17, 0, 1, 64]]
+MONKEY 2
+[[[9, 10, 96, 366, 59, 12], ['*', 19], 23, 2, 3, 64], [[], ['+', 6], 19, 2, 0, 64], [[], ['*', 79], 13, 1, 3, 16], [[475, 101, 817, 126], ['+', 3], 17, 0, 1, 64]]
+MONKEY 3
+Evaluated FALSE. Popping 159 from 3 and inserting into []
+159
+[159]
+Evaluated TRUE. Popping 34 from 3 and inserting into [9, 10, 96, 366, 59, 12]
+34
+[9, 10, 96, 366, 59, 12, 34]
+Evaluated FALSE. Popping 273 from 3 and inserting into [159]
+273
+[159, 273]
+Evaluated FALSE. Popping 43 from 3 and inserting into [159, 273]
+43
+[159, 273, 43]
+ROUND 11
+[[[9, 10, 96, 366, 59, 12, 34], ['*', 19], 23, 2, 3, 64], [[159, 273, 43], ['+', 6], 19, 2, 0, 64], [[], ['*', 79], 13, 1, 3, 16], [[], ['+', 3], 17, 0, 1, 69]]
+MONKEY 0
+Evaluated FALSE. Popping 57 from 0 and inserting into []
+57
+[57]
+Evaluated FALSE. Popping 63 from 0 and inserting into [57]
+63
+[57, 63]
+Evaluated FALSE. Popping 608 from 0 and inserting into [57, 63]
+608
+[57, 63, 608]
+Evaluated FALSE. Popping 2318 from 0 and inserting into [57, 63, 608]
+2318
+[57, 63, 608, 2318]
+Evaluated FALSE. Popping 373 from 0 and inserting into [57, 63, 608, 2318]
+373
+[57, 63, 608, 2318, 373]
+Evaluated FALSE. Popping 76 from 0 and inserting into [57, 63, 608, 2318, 373]
+76
+[57, 63, 608, 2318, 373, 76]
+Evaluated FALSE. Popping 215 from 0 and inserting into [57, 63, 608, 2318, 373, 76]
+215
+[57, 63, 608, 2318, 373, 76, 215]
+[[[], ['*', 19], 23, 2, 3, 72], [[159, 273, 43], ['+', 6], 19, 2, 0, 64], [[], ['*', 79], 13, 1, 3, 16], [[57, 63, 608, 2318, 373, 76, 215], ['+', 3], 17, 0, 1, 69]]
+MONKEY 1
+Evaluated FALSE. Popping 55 from 1 and inserting into []
+55
+[55]
+Evaluated FALSE. Popping 93 from 1 and inserting into [55]
+93
+[55, 93]
+Evaluated FALSE. Popping 16 from 1 and inserting into [55, 93]
+16
+[55, 93, 16]
+[[[55, 93, 16], ['*', 19], 23, 2, 3, 72], [[], ['+', 6], 19, 2, 0, 68], [[], ['*', 79], 13, 1, 3, 16], [[57, 63, 608, 2318, 373, 76, 215], ['+', 3], 17, 0, 1, 69]]
+MONKEY 2
+[[[55, 93, 16], ['*', 19], 23, 2, 3, 72], [[], ['+', 6], 19, 2, 0, 68], [[], ['*', 79], 13, 1, 3, 17], [[57, 63, 608, 2318, 373, 76, 215], ['+', 3], 17, 0, 1, 69]]
+MONKEY 3
+Evaluated FALSE. Popping 20 from 3 and inserting into []
+20
+[20]
+Evaluated FALSE. Popping 22 from 3 and inserting into [20]
+22
+[20, 22]
+Evaluated FALSE. Popping 203 from 3 and inserting into [20, 22]
+203
+[20, 22, 203]
+Evaluated FALSE. Popping 773 from 3 and inserting into [20, 22, 203]
+773
+[20, 22, 203, 773]
+Evaluated FALSE. Popping 125 from 3 and inserting into [20, 22, 203, 773]
+125
+[20, 22, 203, 773, 125]
+Evaluated FALSE. Popping 26 from 3 and inserting into [20, 22, 203, 773, 125]
+26
+[20, 22, 203, 773, 125, 26]
+Evaluated FALSE. Popping 72 from 3 and inserting into [20, 22, 203, 773, 125, 26]
+72
+[20, 22, 203, 773, 125, 26, 72]
+ROUND 12
+[[[55, 93, 16], ['*', 19], 23, 2, 3, 72], [[20, 22, 203, 773, 125, 26, 72], ['+', 6], 19, 2, 0, 68], [[], ['*', 79], 13, 1, 3, 17], [[], ['+', 3], 17, 0, 1, 77]]
+MONKEY 0
+Evaluated FALSE. Popping 348 from 0 and inserting into []
+348
+[348]
+Evaluated FALSE. Popping 589 from 0 and inserting into [348]
+589
+[348, 589]
+Evaluated FALSE. Popping 101 from 0 and inserting into [348, 589]
+101
+[348, 589, 101]
+[[[], ['*', 19], 23, 2, 3, 76], [[20, 22, 203, 773, 125, 26, 72], ['+', 6], 19, 2, 0, 68], [[], ['*', 79], 13, 1, 3, 17], [[348, 589, 101], ['+', 3], 17, 0, 1, 77]]
+MONKEY 1
+Evaluated FALSE. Popping 8 from 1 and inserting into []
+8
+[8]
+Evaluated FALSE. Popping 9 from 1 and inserting into [8]
+9
+[8, 9]
+Evaluated FALSE. Popping 69 from 1 and inserting into [8, 9]
+69
+[8, 9, 69]
+Evaluated FALSE. Popping 259 from 1 and inserting into [8, 9, 69]
+259
+[8, 9, 69, 259]
+Evaluated FALSE. Popping 43 from 1 and inserting into [8, 9, 69, 259]
+43
+[8, 9, 69, 259, 43]
+Evaluated FALSE. Popping 10 from 1 and inserting into [8, 9, 69, 259, 43]
+10
+[8, 9, 69, 259, 43, 10]
+Evaluated FALSE. Popping 26 from 1 and inserting into [8, 9, 69, 259, 43, 10]
+26
+[8, 9, 69, 259, 43, 10, 26]
+[[[8, 9, 69, 259, 43, 10, 26], ['*', 19], 23, 2, 3, 76], [[], ['+', 6], 19, 2, 0, 76], [[], ['*', 79], 13, 1, 3, 17], [[348, 589, 101], ['+', 3], 17, 0, 1, 77]]
+MONKEY 2
+[[[8, 9, 69, 259, 43, 10, 26], ['*', 19], 23, 2, 3, 76], [[], ['+', 6], 19, 2, 0, 76], [[], ['*', 79], 13, 1, 3, 18], [[348, 589, 101], ['+', 3], 17, 0, 1, 77]]
+MONKEY 3
+Evaluated FALSE. Popping 117 from 3 and inserting into []
+117
+[117]
+Evaluated FALSE. Popping 197 from 3 and inserting into [117]
+197
+[117, 197]
+Evaluated TRUE. Popping 34 from 3 and inserting into [8, 9, 69, 259, 43, 10, 26]
+34
+[8, 9, 69, 259, 43, 10, 26, 34]
+ROUND 13
+[[[8, 9, 69, 259, 43, 10, 26, 34], ['*', 19], 23, 2, 3, 76], [[117, 197], ['+', 6], 19, 2, 0, 76], [[], ['*', 79], 13, 1, 3, 18], [[], ['+', 3], 17, 0, 1, 81]]
+MONKEY 0
+Evaluated FALSE. Popping 50 from 0 and inserting into []
+50
+[50]
+Evaluated FALSE. Popping 57 from 0 and inserting into [50]
+57
+[50, 57]
+Evaluated TRUE. Popping 437 from 0 and inserting into []
+437
+[437]
+Evaluated FALSE. Popping 1640 from 0 and inserting into [50, 57]
+1640
+[50, 57, 1640]
+Evaluated FALSE. Popping 272 from 0 and inserting into [50, 57, 1640]
+272
+[50, 57, 1640, 272]
+Evaluated FALSE. Popping 63 from 0 and inserting into [50, 57, 1640, 272]
+63
+[50, 57, 1640, 272, 63]
+Evaluated FALSE. Popping 164 from 0 and inserting into [50, 57, 1640, 272, 63]
+164
+[50, 57, 1640, 272, 63, 164]
+Evaluated FALSE. Popping 215 from 0 and inserting into [50, 57, 1640, 272, 63, 164]
+215
+[50, 57, 1640, 272, 63, 164, 215]
+[[[], ['*', 19], 23, 2, 3, 85], [[117, 197], ['+', 6], 19, 2, 0, 76], [[437], ['*', 79], 13, 1, 3, 18], [[50, 57, 1640, 272, 63, 164, 215], ['+', 3], 17, 0, 1, 81]]
+MONKEY 1
+Evaluated FALSE. Popping 41 from 1 and inserting into []
+41
+[41]
+Evaluated FALSE. Popping 67 from 1 and inserting into [41]
+67
+[41, 67]
+[[[41, 67], ['*', 19], 23, 2, 3, 85], [[], ['+', 6], 19, 2, 0, 79], [[437], ['*', 79], 13, 1, 3, 18], [[50, 57, 1640, 272, 63, 164, 215], ['+', 3], 17, 0, 1, 81]]
+MONKEY 2
+Evaluated FALSE. Popping 11507 from 2 and inserting into [50, 57, 1640, 272, 63, 164, 215]
+11507
+[50, 57, 1640, 272, 63, 164, 215, 11507]
+[[[41, 67], ['*', 19], 23, 2, 3, 85], [[], ['+', 6], 19, 2, 0, 79], [[], ['*', 79], 13, 1, 3, 20], [[50, 57, 1640, 272, 63, 164, 215, 11507], ['+', 3], 17, 0, 1, 81]]
+MONKEY 3
+Evaluated TRUE. Popping 17 from 3 and inserting into [41, 67]
+17
+[41, 67, 17]
+Evaluated FALSE. Popping 20 from 3 and inserting into []
+20
+[20]
+Evaluated FALSE. Popping 547 from 3 and inserting into [20]
+547
+[20, 547]
+Evaluated FALSE. Popping 91 from 3 and inserting into [20, 547]
+91
+[20, 547, 91]
+Evaluated FALSE. Popping 22 from 3 and inserting into [20, 547, 91]
+22
+[20, 547, 91, 22]
+Evaluated FALSE. Popping 55 from 3 and inserting into [20, 547, 91, 22]
+55
+[20, 547, 91, 22, 55]
+Evaluated FALSE. Popping 72 from 3 and inserting into [20, 547, 91, 22, 55]
+72
+[20, 547, 91, 22, 55, 72]
+Evaluated FALSE. Popping 3836 from 3 and inserting into [20, 547, 91, 22, 55, 72]
+3836
+[20, 547, 91, 22, 55, 72, 3836]
+ROUND 14
+[[[41, 67, 17], ['*', 19], 23, 2, 3, 85], [[20, 547, 91, 22, 55, 72, 3836], ['+', 6], 19, 2, 0, 79], [[], ['*', 79], 13, 1, 3, 20], [[], ['+', 3], 17, 0, 1, 90]]
+MONKEY 0
+Evaluated FALSE. Popping 259 from 0 and inserting into []
+259
+[259]
+Evaluated FALSE. Popping 424 from 0 and inserting into [259]
+424
+[259, 424]
+Evaluated FALSE. Popping 107 from 0 and inserting into [259, 424]
+107
+[259, 424, 107]
+[[[], ['*', 19], 23, 2, 3, 89], [[20, 547, 91, 22, 55, 72, 3836], ['+', 6], 19, 2, 0, 79], [[], ['*', 79], 13, 1, 3, 20], [[259, 424, 107], ['+', 3], 17, 0, 1, 90]]
+MONKEY 1
+Evaluated FALSE. Popping 8 from 1 and inserting into []
+8
+[8]
+Evaluated FALSE. Popping 184 from 1 and inserting into [8]
+184
+[8, 184]
+Evaluated FALSE. Popping 32 from 1 and inserting into [8, 184]
+32
+[8, 184, 32]
+Evaluated FALSE. Popping 9 from 1 and inserting into [8, 184, 32]
+9
+[8, 184, 32, 9]
+Evaluated FALSE. Popping 20 from 1 and inserting into [8, 184, 32, 9]
+20
+[8, 184, 32, 9, 20]
+Evaluated FALSE. Popping 26 from 1 and inserting into [8, 184, 32, 9, 20]
+26
+[8, 184, 32, 9, 20, 26]
+Evaluated FALSE. Popping 1280 from 1 and inserting into [8, 184, 32, 9, 20, 26]
+1280
+[8, 184, 32, 9, 20, 26, 1280]
+[[[8, 184, 32, 9, 20, 26, 1280], ['*', 19], 23, 2, 3, 89], [[], ['+', 6], 19, 2, 0, 87], [[], ['*', 79], 13, 1, 3, 20], [[259, 424, 107], ['+', 3], 17, 0, 1, 90]]
+MONKEY 2
+[[[8, 184, 32, 9, 20, 26, 1280], ['*', 19], 23, 2, 3, 89], [[], ['+', 6], 19, 2, 0, 87], [[], ['*', 79], 13, 1, 3, 21], [[259, 424, 107], ['+', 3], 17, 0, 1, 90]]
+MONKEY 3
+Evaluated FALSE. Popping 87 from 3 and inserting into []
+87
+[87]
+Evaluated FALSE. Popping 142 from 3 and inserting into [87]
+142
+[87, 142]
+Evaluated FALSE. Popping 36 from 3 and inserting into [87, 142]
+36
+[87, 142, 36]
+ROUND 15
+[[[8, 184, 32, 9, 20, 26, 1280], ['*', 19], 23, 2, 3, 89], [[87, 142, 36], ['+', 6], 19, 2, 0, 87], [[], ['*', 79], 13, 1, 3, 21], [[], ['+', 3], 17, 0, 1, 94]]
+MONKEY 0
+Evaluated FALSE. Popping 50 from 0 and inserting into []
+50
+[50]
+Evaluated FALSE. Popping 1165 from 0 and inserting into [50]
+1165
+[50, 1165]
+Evaluated FALSE. Popping 202 from 0 and inserting into [50, 1165]
+202
+[50, 1165, 202]
+Evaluated FALSE. Popping 57 from 0 and inserting into [50, 1165, 202]
+57
+[50, 1165, 202, 57]
+Evaluated FALSE. Popping 126 from 0 and inserting into [50, 1165, 202, 57]
+126
+[50, 1165, 202, 57, 126]
+Evaluated FALSE. Popping 164 from 0 and inserting into [50, 1165, 202, 57, 126]
+164
+[50, 1165, 202, 57, 126, 164]
+Evaluated FALSE. Popping 8106 from 0 and inserting into [50, 1165, 202, 57, 126, 164]
+8106
+[50, 1165, 202, 57, 126, 164, 8106]
+[[[], ['*', 19], 23, 2, 3, 97], [[87, 142, 36], ['+', 6], 19, 2, 0, 87], [[], ['*', 79], 13, 1, 3, 21], [[50, 1165, 202, 57, 126, 164, 8106], ['+', 3], 17, 0, 1, 94]]
+MONKEY 1
+Evaluated FALSE. Popping 31 from 1 and inserting into []
+31
+[31]
+Evaluated FALSE. Popping 49 from 1 and inserting into [31]
+49
+[31, 49]
+Evaluated FALSE. Popping 14 from 1 and inserting into [31, 49]
+14
+[31, 49, 14]
+[[[31, 49, 14], ['*', 19], 23, 2, 3, 97], [[], ['+', 6], 19, 2, 0, 91], [[], ['*', 79], 13, 1, 3, 21], [[50, 1165, 202, 57, 126, 164, 8106], ['+', 3], 17, 0, 1, 94]]
+MONKEY 2
+[[[31, 49, 14], ['*', 19], 23, 2, 3, 97], [[], ['+', 6], 19, 2, 0, 91], [[], ['*', 79], 13, 1, 3, 22], [[50, 1165, 202, 57, 126, 164, 8106], ['+', 3], 17, 0, 1, 94]]
+MONKEY 3
+Evaluated TRUE. Popping 17 from 3 and inserting into [31, 49, 14]
+17
+[31, 49, 14, 17]
+Evaluated FALSE. Popping 389 from 3 and inserting into []
+389
+[389]
+Evaluated TRUE. Popping 68 from 3 and inserting into [31, 49, 14, 17]
+68
+[31, 49, 14, 17, 68]
+Evaluated FALSE. Popping 20 from 3 and inserting into [389]
+20
+[389, 20]
+Evaluated FALSE. Popping 43 from 3 and inserting into [389, 20]
+43
+[389, 20, 43]
+Evaluated FALSE. Popping 55 from 3 and inserting into [389, 20, 43]
+55
+[389, 20, 43, 55]
+Evaluated TRUE. Popping 2703 from 3 and inserting into [31, 49, 14, 17, 68]
+2703
+[31, 49, 14, 17, 68, 2703]
+ROUND 16
+[[[31, 49, 14, 17, 68, 2703], ['*', 19], 23, 2, 3, 97], [[389, 20, 43, 55], ['+', 6], 19, 2, 0, 91], [[], ['*', 79], 13, 1, 3, 22], [[], ['+', 3], 17, 0, 1, 102]]
+MONKEY 0
+Evaluated FALSE. Popping 196 from 0 and inserting into []
+196
+[196]
+Evaluated FALSE. Popping 310 from 0 and inserting into [196]
+310
+[196, 310]
+Evaluated FALSE. Popping 88 from 0 and inserting into [196, 310]
+88
+[196, 310, 88]
+Evaluated FALSE. Popping 107 from 0 and inserting into [196, 310, 88]
+107
+[196, 310, 88, 107]
+Evaluated FALSE. Popping 430 from 0 and inserting into [196, 310, 88, 107]
+430
+[196, 310, 88, 107, 430]
+Evaluated FALSE. Popping 17119 from 0 and inserting into [196, 310, 88, 107, 430]
+17119
+[196, 310, 88, 107, 430, 17119]
+[[[], ['*', 19], 23, 2, 3, 104], [[389, 20, 43, 55], ['+', 6], 19, 2, 0, 91], [[], ['*', 79], 13, 1, 3, 22], [[196, 310, 88, 107, 430, 17119], ['+', 3], 17, 0, 1, 102]]
+MONKEY 1
+Evaluated FALSE. Popping 131 from 1 and inserting into []
+131
+[131]
+Evaluated FALSE. Popping 8 from 1 and inserting into [131]
+8
+[131, 8]
+Evaluated FALSE. Popping 16 from 1 and inserting into [131, 8]
+16
+[131, 8, 16]
+Evaluated FALSE. Popping 20 from 1 and inserting into [131, 8, 16]
+20
+[131, 8, 16, 20]
+[[[131, 8, 16, 20], ['*', 19], 23, 2, 3, 104], [[], ['+', 6], 19, 2, 0, 96], [[], ['*', 79], 13, 1, 3, 22], [[196, 310, 88, 107, 430, 17119], ['+', 3], 17, 0, 1, 102]]
+MONKEY 2
+[[[131, 8, 16, 20], ['*', 19], 23, 2, 3, 104], [[], ['+', 6], 19, 2, 0, 96], [[], ['*', 79], 13, 1, 3, 23], [[196, 310, 88, 107, 430, 17119], ['+', 3], 17, 0, 1, 102]]
+MONKEY 3
+Evaluated FALSE. Popping 66 from 3 and inserting into []
+66
+[66]
+Evaluated FALSE. Popping 104 from 3 and inserting into [66]
+104
+[66, 104]
+Evaluated FALSE. Popping 30 from 3 and inserting into [66, 104]
+30
+[66, 104, 30]
+Evaluated FALSE. Popping 36 from 3 and inserting into [66, 104, 30]
+36
+[66, 104, 30, 36]
+Evaluated FALSE. Popping 144 from 3 and inserting into [66, 104, 30, 36]
+144
+[66, 104, 30, 36, 144]
+Evaluated FALSE. Popping 5707 from 3 and inserting into [66, 104, 30, 36, 144]
+5707
+[66, 104, 30, 36, 144, 5707]
+ROUND 17
+[[[131, 8, 16, 20], ['*', 19], 23, 2, 3, 104], [[66, 104, 30, 36, 144, 5707], ['+', 6], 19, 2, 0, 96], [[], ['*', 79], 13, 1, 3, 23], [[], ['+', 3], 17, 0, 1, 109]]
+MONKEY 0
+Evaluated FALSE. Popping 829 from 0 and inserting into []
+829
+[829]
+Evaluated FALSE. Popping 50 from 0 and inserting into [829]
+50
+[829, 50]
+Evaluated FALSE. Popping 101 from 0 and inserting into [829, 50]
+101
+[829, 50, 101]
+Evaluated FALSE. Popping 126 from 0 and inserting into [829, 50, 101]
+126
+[829, 50, 101, 126]
+[[[], ['*', 19], 23, 2, 3, 109], [[66, 104, 30, 36, 144, 5707], ['+', 6], 19, 2, 0, 96], [[], ['*', 79], 13, 1, 3, 23], [[829, 50, 101, 126], ['+', 3], 17, 0, 1, 109]]
+MONKEY 1
+Evaluated FALSE. Popping 24 from 1 and inserting into []
+24
+[24]
+Evaluated FALSE. Popping 36 from 1 and inserting into [24]
+36
+[24, 36]
+Evaluated FALSE. Popping 12 from 1 and inserting into [24, 36]
+12
+[24, 36, 12]
+Evaluated FALSE. Popping 14 from 1 and inserting into [24, 36, 12]
+14
+[24, 36, 12, 14]
+Evaluated FALSE. Popping 50 from 1 and inserting into [24, 36, 12, 14]
+50
+[24, 36, 12, 14, 50]
+Evaluated FALSE. Popping 1904 from 1 and inserting into [24, 36, 12, 14, 50]
+1904
+[24, 36, 12, 14, 50, 1904]
+[[[24, 36, 12, 14, 50, 1904], ['*', 19], 23, 2, 3, 109], [[], ['+', 6], 19, 2, 0, 103], [[], ['*', 79], 13, 1, 3, 23], [[829, 50, 101, 126], ['+', 3], 17, 0, 1, 109]]
+MONKEY 2
+[[[24, 36, 12, 14, 50, 1904], ['*', 19], 23, 2, 3, 109], [[], ['+', 6], 19, 2, 0, 103], [[], ['*', 79], 13, 1, 3, 24], [[829, 50, 101, 126], ['+', 3], 17, 0, 1, 109]]
+MONKEY 3
+Evaluated FALSE. Popping 277 from 3 and inserting into []
+277
+[277]
+Evaluated TRUE. Popping 17 from 3 and inserting into [24, 36, 12, 14, 50, 1904]
+17
+[24, 36, 12, 14, 50, 1904, 17]
+Evaluated TRUE. Popping 34 from 3 and inserting into [24, 36, 12, 14, 50, 1904, 17]
+34
+[24, 36, 12, 14, 50, 1904, 17, 34]
+Evaluated FALSE. Popping 43 from 3 and inserting into [277]
+43
+[277, 43]
+ROUND 18
+[[[24, 36, 12, 14, 50, 1904, 17, 34], ['*', 19], 23, 2, 3, 109], [[277, 43], ['+', 6], 19, 2, 0, 103], [[], ['*', 79], 13, 1, 3, 24], [[], ['+', 3], 17, 0, 1, 114]]
+MONKEY 0
+Evaluated FALSE. Popping 152 from 0 and inserting into []
+152
+[152]
+Evaluated FALSE. Popping 228 from 0 and inserting into [152]
+228
+[152, 228]
+Evaluated FALSE. Popping 76 from 0 and inserting into [152, 228]
+76
+[152, 228, 76]
+Evaluated FALSE. Popping 88 from 0 and inserting into [152, 228, 76]
+88
+[152, 228, 76, 88]
+Evaluated FALSE. Popping 316 from 0 and inserting into [152, 228, 76, 88]
+316
+[152, 228, 76, 88, 316]
+Evaluated FALSE. Popping 12058 from 0 and inserting into [152, 228, 76, 88, 316]
+12058
+[152, 228, 76, 88, 316, 12058]
+Evaluated FALSE. Popping 107 from 0 and inserting into [152, 228, 76, 88, 316, 12058]
+107
+[152, 228, 76, 88, 316, 12058, 107]
+Evaluated FALSE. Popping 215 from 0 and inserting into [152, 228, 76, 88, 316, 12058, 107]
+215
+[152, 228, 76, 88, 316, 12058, 107, 215]
+[[[], ['*', 19], 23, 2, 3, 118], [[277, 43], ['+', 6], 19, 2, 0, 103], [[], ['*', 79], 13, 1, 3, 24], [[152, 228, 76, 88, 316, 12058, 107, 215], ['+', 3], 17, 0, 1, 114]]
+MONKEY 1
+Evaluated FALSE. Popping 94 from 1 and inserting into []
+94
+[94]
+Evaluated FALSE. Popping 16 from 1 and inserting into [94]
+16
+[94, 16]
+[[[94, 16], ['*', 19], 23, 2, 3, 118], [[], ['+', 6], 19, 2, 0, 106], [[], ['*', 79], 13, 1, 3, 24], [[152, 228, 76, 88, 316, 12058, 107, 215], ['+', 3], 17, 0, 1, 114]]
+MONKEY 2
+[[[94, 16], ['*', 19], 23, 2, 3, 118], [[], ['+', 6], 19, 2, 0, 106], [[], ['*', 79], 13, 1, 3, 25], [[152, 228, 76, 88, 316, 12058, 107, 215], ['+', 3], 17, 0, 1, 114]]
+MONKEY 3
+Evaluated TRUE. Popping 51 from 3 and inserting into [94, 16]
+51
+[94, 16, 51]
+Evaluated FALSE. Popping 77 from 3 and inserting into []
+77
+[77]
+Evaluated FALSE. Popping 26 from 3 and inserting into [77]
+26
+[77, 26]
+Evaluated FALSE. Popping 30 from 3 and inserting into [77, 26]
+30
+[77, 26, 30]
+Evaluated FALSE. Popping 106 from 3 and inserting into [77, 26, 30]
+106
+[77, 26, 30, 106]
+Evaluated FALSE. Popping 4020 from 3 and inserting into [77, 26, 30, 106]
+4020
+[77, 26, 30, 106, 4020]
+Evaluated FALSE. Popping 36 from 3 and inserting into [77, 26, 30, 106, 4020]
+36
+[77, 26, 30, 106, 4020, 36]
+Evaluated FALSE. Popping 72 from 3 and inserting into [77, 26, 30, 106, 4020, 36]
+72
+[77, 26, 30, 106, 4020, 36, 72]
+ROUND 19
+[[[94, 16, 51], ['*', 19], 23, 2, 3, 118], [[77, 26, 30, 106, 4020, 36, 72], ['+', 6], 19, 2, 0, 106], [[], ['*', 79], 13, 1, 3, 25], [[], ['+', 3], 17, 0, 1, 123]]
+MONKEY 0
+Evaluated FALSE. Popping 595 from 0 and inserting into []
+595
+[595]
+Evaluated FALSE. Popping 101 from 0 and inserting into [595]
+101
+[595, 101]
+Evaluated FALSE. Popping 323 from 0 and inserting into [595, 101]
+323
+[595, 101, 323]
+[[[], ['*', 19], 23, 2, 3, 122], [[77, 26, 30, 106, 4020, 36, 72], ['+', 6], 19, 2, 0, 106], [[], ['*', 79], 13, 1, 3, 25], [[595, 101, 323], ['+', 3], 17, 0, 1, 123]]
+MONKEY 1
+Evaluated FALSE. Popping 27 from 1 and inserting into []
+27
+[27]
+Evaluated FALSE. Popping 10 from 1 and inserting into [27]
+10
+[27, 10]
+Evaluated FALSE. Popping 12 from 1 and inserting into [27, 10]
+12
+[27, 10, 12]
+Evaluated FALSE. Popping 37 from 1 and inserting into [27, 10, 12]
+37
+[27, 10, 12, 37]
+Evaluated FALSE. Popping 1342 from 1 and inserting into [27, 10, 12, 37]
+1342
+[27, 10, 12, 37, 1342]
+Evaluated FALSE. Popping 14 from 1 and inserting into [27, 10, 12, 37, 1342]
+14
+[27, 10, 12, 37, 1342, 14]
+Evaluated FALSE. Popping 26 from 1 and inserting into [27, 10, 12, 37, 1342, 14]
+26
+[27, 10, 12, 37, 1342, 14, 26]
+[[[27, 10, 12, 37, 1342, 14, 26], ['*', 19], 23, 2, 3, 122], [[], ['+', 6], 19, 2, 0, 114], [[], ['*', 79], 13, 1, 3, 25], [[595, 101, 323], ['+', 3], 17, 0, 1, 123]]
+MONKEY 2
+[[[27, 10, 12, 37, 1342, 14, 26], ['*', 19], 23, 2, 3, 122], [[], ['+', 6], 19, 2, 0, 114], [[], ['*', 79], 13, 1, 3, 26], [[595, 101, 323], ['+', 3], 17, 0, 1, 123]]
+MONKEY 3
+Evaluated FALSE. Popping 199 from 3 and inserting into []
+199
+[199]
+Evaluated TRUE. Popping 34 from 3 and inserting into [27, 10, 12, 37, 1342, 14, 26]
+34
+[27, 10, 12, 37, 1342, 14, 26, 34]
+Evaluated FALSE. Popping 108 from 3 and inserting into [199]
+108
+[199, 108]
+[[[27, 10, 12, 37, 1342, 14, 26, 34], ['*', 19], 23, 2, 3, 122], [[199, 108], ['+', 6], 19, 2, 0, 114], [[], ['*', 79], 13, 1, 3, 26], [[], ['+', 3], 17, 0, 1, 127]]
+The solution for part 1 is: [[[27, 10, 12, 37, 1342, 14, 26, 34], ['*', 19], 23, 2, 3, 122], [[199, 108], ['+', 6], 19, 2, 0, 114], [[], ['*', 79], 13, 1, 3, 26], [[], ['+', 3], 17, 0, 1, 127]]
+The solution for part 2 is: 2
