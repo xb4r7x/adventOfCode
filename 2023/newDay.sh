@@ -1,19 +1,30 @@
 #!/bin/bash
 
 day=$1
+year=2023
 mkdir "./$1"
 touch "./$1/ex_input.txt"
 scriptPath="./$1/day$1.py"
-cookie="session=$ADVENT_SESSION"
-curl --cookie $cookie https://adventofcode.com/2023/day/$1/input > ./$1/input.txt
 
 cat <<- EOF > $scriptPath
-with open('input.txt') as f:
-    lines = [line.rstrip() for line in f]
+from aocd import get_data
+from aocd import submit
+
+stringData = get_data(day=$1, year=$year)
+lines = stringData.splitlines()
+
+submitA=False
+submitB=False
 
 def main():
     print("The solution for part 1 is: {0}".format(part1Solution(lines)))
+    if submitA == True:
+        print("Submitting solution A to AoC:")
+        submit(part1Solution(lines), part="a", day=$1, year=$year)
     print("The solution for part 2 is: {0}".format(part2Solution(lines)))
+    if submitB == True:
+        print("Submitting solution B to AoC:")
+        sumbit(part2Solution(lines), part="b", day=$1, year=$year)
 
 def part1Solution(lines):
     
@@ -27,6 +38,8 @@ if __name__ == "__main__":
     main()
 EOF
 
+echo "Activate python venv"
+source ./venv/bin/activate
+
 echo "Created directory: ./$1"
-echo "Created script: $scriptPath"
-echo "Fetched input file from https://adventofcode.com/2022/day/$1/input here: ./$1/input.txt"
+echo "Created script skeleton: $scriptPath"
