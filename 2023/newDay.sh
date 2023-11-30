@@ -3,13 +3,14 @@
 if [ $# -eq 0 ]; then
     day=$(date +%d)
     echo "No arguments provided. Assuming today: $day."
-    echo "Ensuring folder for $day doesn't already exist."
-    if [ -d ./$day ]; then
-        echo "The directory for $day already exists. Exiting to prevent overwritting things."
-        exit 1
-    fi
 else
     day=$1
+fi
+
+echo "Ensuring folder for $day doesn't already exist."
+if [ -d ./$day ]; then
+    echo "The directory for $day already exists. Exiting to prevent overwritting things."
+    exit 1
 fi
 
 year=2023
