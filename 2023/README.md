@@ -7,7 +7,7 @@ https://adventofcode.com/2023
 
 # newDay.sh
 This script will create the directory structure, create a basic python skeleton, and activate our Pyton virtual environment (precreated).
-It takes the day as an argument. There's currently no validation. Don't fuck it up.
+It takes the day as an argument. If no argument is provided it will assume you want today.
 The python skeleton generated requires that your adventofcode.com session cookie be stored in an environment variable $AOC_SESSION and it also requires the aocd libray is installed. (https://pypi.org/project/advent-of-code-data/#description)
 
 #### Obtaining session cookie
