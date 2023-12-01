@@ -36,7 +36,7 @@ def main():
     print("The solution for part 2 is: {0}".format(part2Solution(lines)))
     if submitB == True:
         print("Submitting solution B to AoC:")
-        sumbit(part2Solution(lines), part="b", day=$day, year=$year)
+        submit(part2Solution(lines), part="b", day=$day, year=$year)
 
 def part1Solution(lines):
     
