@@ -19,14 +19,17 @@ touch "./$day/ex_input.txt"
 scriptPath="./$day/day$day.py"
 
 cat <<- EOF > $scriptPath
-from aocd import get_data
-from aocd import submit
+from aocd import get_data, submit
 
-stringData = get_data(day=$day, year=$year)
-lines = stringData.splitlines()
-
+useExample=False
 submitA=False
 submitB=False
+
+if useExample == False:
+    lines = get_data(day=$day, year=$year).splitlines()
+else:
+    with open('ex_input.txt') as f:
+        lines = [line.rstrip() for line in f]
 
 def main():
     print("The solution for part 1 is: {0}".format(part1Solution(lines)))
