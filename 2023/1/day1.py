@@ -1,15 +1,15 @@
-from aocd import get_data
-from aocd import submit
+from aocd import get_data, submit
 import regex as re
 
-stringData = get_data(day=1, year=2023)
-lines = stringData.splitlines()
-
-#with open('ex_input.txt') as f:
-#    lines = [line.rstrip() for line in f]
-
+useExample=False
 submitA=False
 submitB=False
+
+if useExample == False:
+    lines = get_data(day=1, year=2023).splitlines()
+else:
+    with open('ex_input.txt') as f:
+        lines = [line.rstrip() for line in f]
 
 def main():
     print("The solution for part 1 is: {0}".format(part1Solution(lines)))
@@ -26,13 +26,12 @@ def part1Solution(lines):
     for line in lines:
          nums=re.findall(r'\d', line)
          number=nums[0]+nums[-1]
-         total=total+int(number)     
+         total+=int(number)     
     return total
 
 def part2Solution(lines):
     total=0
     for line in lines:
-        print(line)
         nums=re.findall(r'\d|one|two|three|four|five|six|seven|eight|nine', line, overlapped=True)
         wordNums = {'one': "1",
                     'two': "2",
@@ -57,7 +56,7 @@ def part2Solution(lines):
 
         firstLast=firstNum+lastNum
 
-        total=total+int(firstLast)
+        total+=int(firstLast)
         
     return total
 
