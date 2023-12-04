@@ -1,5 +1,6 @@
 #Specific additions
 *.swp
+*.swo
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
