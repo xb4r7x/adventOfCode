@@ -20,11 +20,9 @@ def main():
         print("Submitting solution B to AoC:")
         submit(part2Solution(lines), part="b", day=6, year=2023)
 
-def multiplyList(myList):
-    # Multiply elements one by one
+def multiplyList(aList):
     result = 1
-    for x in myList:
-        result = result * x
+    for x in aList: result*= x
     return result
 
 def solveIt(races):
@@ -33,8 +31,7 @@ def solveIt(races):
     for time,distance in races:
         winCount=0
         remainingTime=time
-        for t in range(time):
-            speed=t
+        for speed in range(time):
             totDist=speed*remainingTime
             if totDist > distance:
                 winCount+=1
