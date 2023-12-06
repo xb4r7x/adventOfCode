@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-    day=$(date +%d)
+    day=$(date -v+1d +%-d)
     echo "No arguments provided. Assuming today: $day."
 else
     day=$1
