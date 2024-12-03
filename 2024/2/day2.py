@@ -30,12 +30,8 @@ def part1Solution(lines):
      
     for line in lines:
         lineList=line.split()
-        
-        decreasing = all(1 <= int(j) - int(i) <= 3 for i, j in zip(lineList, lineList[1:]))
-        increasing = all(1 <= int(i) - int(j) <= 3 for i, j in zip(lineList, lineList[1:]))
-       
-        if decreasing or increasing:
-            safe += 1
+        if safeReports(lineList):
+           safe += 1    
 
     return safe
 

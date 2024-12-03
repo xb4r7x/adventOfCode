@@ -22,5 +22,8 @@ This year I'll be using a venv for handling dependencies and whatnot. To create 
 - `virtualenv --python=python3 venv`
 - `source ./venv/bin/activate`
 
+# pip Installed packages
+- `pip install advent-of-code-data`
+
 # Folder Structure
 Each day of the advent calendar has its own numbered folder. All files to solve the problems of the day will be placed inside that folder. 
