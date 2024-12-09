@@ -29,11 +29,11 @@ def getLists(line):
     block = True
     for char in lineList:
         if block:
-            for num in range(char):
+            for _ in range(char):
                 blockList.append(id)
             id+=1
         else:
-            for num in range(char):
+            for _ in range(char):
                 idx = len(blockList)
                 spaceList.append(idx)
                 blockList.append(".")
@@ -75,13 +75,13 @@ def part1Solution(lines):
 
 def part2Solution(lines):
     for line in lines:
-        blockList, freeSpace = getLists(line)
+        blockList, _ = getLists(line)
         spaceSizes, blockSizes = getSpaces(blockList)
         for bsize in reversed(blockSizes):
             for ssize in spaceSizes:
                 if ssize[1] >= bsize[1] and ssize[0] < bsize[0]:
                     blockList[ssize[0]:ssize[0] + bsize[1]], blockList[bsize[0]:bsize[0] + bsize[1]] = blockList[bsize[0]:bsize[0] + bsize[1]], blockList[ssize[0]:ssize[0] + bsize[1]]
-                    spaceSizes, blockSizes2 = getSpaces(blockList)
+                    spaceSizes, _ = getSpaces(blockList)
                     break
                 else:
                     continue
