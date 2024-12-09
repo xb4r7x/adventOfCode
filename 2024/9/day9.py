@@ -71,8 +71,6 @@ def part1Solution(lines):
             total += i * int(num)
     return total
 
-
-
 def part2Solution(lines):
     for line in lines:
         blockList, _ = getLists(line)
