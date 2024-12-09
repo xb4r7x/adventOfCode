@@ -1,8 +1,9 @@
 from aocd import get_data, submit
+from itertools import groupby
 
 useExample=False
-submitA=True
-submitB=False
+submitA=False
+submitB=True
 
 if useExample == False:
     lines = get_data(day=9, year=2024).splitlines()
@@ -19,22 +20,6 @@ def main():
     if submitB == True:
         print("Submitting solution B to AoC:")
         submit(part2Solution(lines), part="b", day=9, year=2024)
-
-def calcBlockList(line):
-    blockList = []
-    id = 0
-    for i in range(0, len(line),2):
-        pair = line[i:i+2]
-        if len(pair) == 2:
-            file, space = pair
-        else:
-            file = pair
-        for x in range(int(file)):
-            blockList.append(id)
-        for y in range(int(space)):
-            blockList.append(".")
-        id+=1
-    return blockList
 
 def getLists(line):
     lineList = list(map(int, line))
@@ -53,8 +38,21 @@ def getLists(line):
                 spaceList.append(idx)
                 blockList.append(".")
         block = not block
-
     return blockList, spaceList
+
+def getSpaces(blocklist):
+    spaceSizes = []
+    blockSizes = []
+    idx = 0
+    for key, group in groupby(blocklist):
+        listGroup = list(group)
+        length = len(listGroup)
+        if key == '.':
+            spaceSizes.append((idx, length))
+        else:
+            blockSizes.append((idx, length))
+        idx+=length
+    return spaceSizes, blockSizes
 
 def part1Solution(lines):
     for line in lines: 
@@ -73,11 +71,25 @@ def part1Solution(lines):
             total += i * int(num)
     return total
 
-# 6310675819476
+
 
 def part2Solution(lines):
-    
-    return 2
+    for line in lines:
+        blockList, freeSpace = getLists(line)
+        spaceSizes, blockSizes = getSpaces(blockList)
+        for bsize in reversed(blockSizes):
+            for ssize in spaceSizes:
+                if ssize[1] >= bsize[1] and ssize[0] < bsize[0]:
+                    blockList[ssize[0]:ssize[0] + bsize[1]], blockList[bsize[0]:bsize[0] + bsize[1]] = blockList[bsize[0]:bsize[0] + bsize[1]], blockList[ssize[0]:ssize[0] + bsize[1]]
+                    spaceSizes, blockSizes2 = getSpaces(blockList)
+                    break
+                else:
+                    continue
+        total = 0
+        for i, num in enumerate(blockList):
+            if str(num).isdigit():
+                total += i * int(num)
+    return total
 
 if __name__ == "__main__":
     main()
